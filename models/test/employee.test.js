@@ -3,9 +3,6 @@ const mongoose = require('mongoose');
 const expect = require('chai').expect;
 
 describe('Employee', () => {
-  afterEach(() => {
-    mongoose.models = {};
-  });
 
   it('should throw an error if no "firstName" arg', () => {
     const emp = new Employee({});
